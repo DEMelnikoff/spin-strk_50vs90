@@ -7,22 +7,22 @@ const jsPsych = initJsPsych({
             document.body.innerHTML = 
                 `<div align='center' style="margin: 10%">
                     <p>Thank you for participating!<p>
-                    <b>You will be automatically re-directed to Prolific in a few moments.</b>
+                    <b>To receive credit, please wait to be re-directed to Sona Systems.</b>
                 </div>`;
             setTimeout(() => { 
-                location.href = `https://app.prolific.co/submissions/complete?cc=${completionCode}`
+              location.href = `https://udel-buad.sona-systems.com/webstudy_credit.aspx?experiment_id=503&credit_token=1c41109f97684d3a8c72d4c046f1854e&survey_code=${sona_id}`
             }, 1000);
         }
     },
 });
 
 // set and save subject ID
-let subject_id = jsPsych.data.getURLVariable("PROLIFIC_PID");
-if (!subject_id) { subject_id = jsPsych.randomization.randomID(10) };
-jsPsych.data.addProperties({ subject: subject_id });
+let sona_id = jsPsych.data.getURLVariable("id");
+if (!sona_id) { sona_id = jsPsych.randomization.randomID(10) };
+jsPsych.data.addProperties({ subject: sona_id, date: new Date() });
 
 // define file name
-const filename = `${subject_id}.csv`;
+const filename = `${sona_id}.csv`;
 
 // define completion code for Prolific
 const completionCode = "C1ACNNE6";
