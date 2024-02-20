@@ -49,7 +49,7 @@ const exp = (function() {
 
             `<div class='parent' style='text-align:left'>
                 <p>Throughout both rounds of Spin the Wheel, you'll be competing for a chance to win a <b>$100.00 bonus prize</b>.
-                Specifically, you'll earn tokens. The tokens you earn will be entered into a lottery, and if one of your tokens is drawn, you'll win $100.00.</p>
+                Specifically, you'll earn tokens. The tokens you earn will be entered into a raffle, and if one of your tokens is drawn, you'll win $100.00.</p>
                 <p>To maximize your chances of winning a $100.00 bonus, you'll need to earn as many tokens as possible. Continue to learn how to earn tokens!</p>
             </div>`,
         ],
