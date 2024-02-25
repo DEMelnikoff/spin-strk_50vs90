@@ -778,7 +778,7 @@ const exp = (function() {
         }; 
 
         const demos = {
-            timeline: [taskComplete, gender, age, ethnicity, english, finalWord, pid]
+            timeline: [taskComplete, gender, age, ethnicity, english, finalWord]
         };
 
         return demos;
