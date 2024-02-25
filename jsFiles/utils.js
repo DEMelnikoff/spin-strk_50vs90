@@ -10,7 +10,7 @@ const jsPsych = initJsPsych({
                     <b>To receive credit, please wait to be re-directed to Sona Systems.</b>
                 </div>`;
             setTimeout(() => { 
-              location.href = `https://udel-buad.sona-systems.com/webstudy_credit.aspx?experiment_id=512&credit_token=34a9a62991864c518867133bd566ffaa&survey_code=${sona_id}`
+              location.href = `https://delaware.ca1.qualtrics.com/jfe/form/SV_cBKNOKvdxUArwQm?id=${sona_id}`
             }, 1000);
         }
     },
