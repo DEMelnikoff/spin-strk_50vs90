@@ -13,7 +13,7 @@ const exp = (function() {
 
     const winRateDraw = Math.floor(Math.random() * 2);
     let settings = {
-        winRate: ['high', 'low'][winRateDraw],
+        winRate: ['.9', '.5'][winRateDraw],
         wedgeText: [['9 winning wedges (which are green)', '1 losing wedge (which is gray)'], ['5 winning wedges (which are green)', '5 losing wedges (which are gray)']][winRateDraw],
         gameType: [['binary', 'streak'], ['streak', 'binary']][Math.floor(Math.random() * 2)],
         streakType: ['continuous', 'binary'][Math.floor(Math.random() * 2)],
