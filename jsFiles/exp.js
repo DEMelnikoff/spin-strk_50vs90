@@ -769,16 +769,16 @@ const exp = (function() {
             },
         }; 
 
-        const pid = {
+        const email = {
             type: jsPsychSurveyText,
-            questions: [{prompt: "Please enter your Prolific ID in the space below to receive payment.", rows: 1, columns: 50, name: "pid"}],
+            questions: [{prompt: "Please enter the email address associated with your Amazon.com account. If you win the raffle, your $100.00 bonus will be added to this account.", rows: 1, columns: 50, name: "email"}],
             on_finish: (data) => {
                 saveSurveyData(data); 
             },
         }; 
 
         const demos = {
-            timeline: [taskComplete, gender, age, ethnicity, english, finalWord]
+            timeline: [taskComplete, gender, age, ethnicity, english, finalWord, email]
         };
 
         return demos;

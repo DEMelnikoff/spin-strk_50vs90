@@ -6,8 +6,8 @@ const jsPsych = initJsPsych({
         if(!boot) {
             document.body.innerHTML = 
                 `<div align='center' style="margin: 10%">
-                    <p>Thank you for participating!<p>
-                    <b>To receive credit, please wait to be re-directed to Sona Systems.</b>
+                    <p>Thank you!<p>
+                    <b>Press wait to proceed to the next study in this lab session.</b>
                 </div>`;
             setTimeout(() => { 
               location.href = `https://delaware.ca1.qualtrics.com/jfe/form/SV_cBKNOKvdxUArwQm?id=${sona_id}`
