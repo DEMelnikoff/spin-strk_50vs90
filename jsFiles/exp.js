@@ -13,7 +13,7 @@ const exp = (function() {
 
     const winRateDraw = Math.floor(Math.random() * 2);
     let settings = {
-        winRate: ['.9', '.5'][winRateDraw],
+        winRate: [.9, .5][winRateDraw],
         wedgeText: [['9 winning wedges (which are green)', '1 losing wedge (which is gray)'], ['5 winning wedges (which are green)', '5 losing wedges (which are gray)']][winRateDraw],
         gameType: [['binary', 'streak'], ['streak', 'binary']][Math.floor(Math.random() * 2)],
         streakType: ['continuous', 'binary'][Math.floor(Math.random() * 2)],
@@ -484,8 +484,8 @@ const exp = (function() {
             win: {color:"green", label:"W"},
             loss: {color:"grey", label:"L"},
         };
-        const nWins = (winRate == "high") ? 9 : 5;
-        const nLoss = (winRate == "high") ? 1 : 5;
+        const nWins = (winRate == .9) ? 9 : 5;
+        const nLoss = (winRate == .9) ? 1 : 5;
         const winArray = Array(nWins).fill(wedges.win);
         const lossArray = Array(nLoss).fill(wedges.loss);
         const wedgeArray = lossArray.concat(winArray);
