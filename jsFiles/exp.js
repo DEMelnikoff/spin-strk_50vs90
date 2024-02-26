@@ -771,7 +771,7 @@ const exp = (function() {
 
         const email = {
             type: jsPsychSurveyText,
-            questions: [{prompt: "Please enter the email address associated with your Amazon.com account. If you win the raffle, your $100.00 bonus will be added to this account.", rows: 1, columns: 50, name: "email"}],
+            questions: [{prompt: "<p>Please enter the email address associated with your Amazon.com account.</p><p>If you win the raffle, your $100.00 bonus will be added to this account.</p>", rows: 1, columns: 50, name: "email"}],
             on_finish: (data) => {
                 saveSurveyData(data); 
             },
